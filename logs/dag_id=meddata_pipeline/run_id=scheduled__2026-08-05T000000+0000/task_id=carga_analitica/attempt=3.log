@@ -1,0 +1,16 @@
+{"timestamp":"2026-08-29T03:48:19.113967Z","level":"info","event":"DAG bundles loaded: dags-folder","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager","filename":"manager.py","lineno":209}
+{"timestamp":"2026-08-29T03:48:19.115135Z","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/meddata_pipeline.py","logger":"airflow.dag_processing.dagbag.BundleDagBag","filename":"dagbag.py","lineno":469}
+{"timestamp":"2026-08-29T03:48:19.594248Z","level":"info","event":"Default Auth client Circuit breaker strategy enabled","logger":"oci.circuit_breaker","filename":"__init__.py","lineno":28}
+{"timestamp":"2026-08-29T03:48:19.903117Z","level":"warning","event":"The `airflow.hooks.base.BaseHook` attribute is deprecated. Please use `'airflow.sdk.bases.hook.BaseHook'`.","category":"UserWarning","filename":"/opt/airflow/dags/meddata_pipeline.py","lineno":11,"logger":"py.warnings"}
+{"timestamp":"2026-08-29T03:48:19.921518Z","level":"info","event":"[CARGA] Carregando dados para SP/2024/08","logger":"task.stdout"}
+{"timestamp":"2026-08-29T03:48:19.930015Z","level":"info","event":"============================================================","logger":"task.stdout"}
+{"timestamp":"2026-08-29T03:48:19.930838Z","level":"info","event":"INICIANDO CARGA ANALITICA","logger":"task.stdout"}
+{"timestamp":"2026-08-29T03:48:19.931452Z","level":"info","event":"============================================================","logger":"task.stdout"}
+{"timestamp":"2026-08-29T03:48:19.932201Z","level":"info","event":"UF: SP","logger":"task.stdout"}
+{"timestamp":"2026-08-29T03:48:19.932845Z","level":"info","event":"Ano: 2024","logger":"task.stdout"}
+{"timestamp":"2026-08-29T03:48:19.933503Z","level":"info","event":"Mes: 08","logger":"task.stdout"}
+{"timestamp":"2026-08-29T03:48:19.934119Z","level":"info","event":"DSN: meddata_high","logger":"task.stdout"}
+{"timestamp":"2026-08-29T03:48:19.934788Z","level":"info","event":"Namespace: grtrhsatn1p6","logger":"task.stdout"}
+{"timestamp":"2026-08-29T03:48:19.935420Z","level":"info","event":"============================================================","logger":"task.stdout"}
+{"timestamp":"2026-08-29T04:05:47.299947Z","level":"error","event":"Server indicated the task shouldn't be running anymore. Terminating process","detail":{"reason":"not_running","message":"TI is no longer in the running state and task should terminate","current_state":"failed"},"logger":"task"}
+{"timestamp":"2026-08-29T04:05:52.329948Z","level":"error","event":"Task killed!","logger":"task"}

@@ -1,0 +1,43 @@
+{"timestamp":"2026-08-28T22:55:25.590628Z","level":"info","event":"DAG bundles loaded: dags-folder","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager","filename":"manager.py","lineno":209}
+{"timestamp":"2026-08-28T22:55:25.591870Z","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/meddata_pipeline.py","logger":"airflow.dag_processing.dagbag.BundleDagBag","filename":"dagbag.py","lineno":469}
+{"timestamp":"2026-08-28T22:55:26.067587Z","level":"info","event":"Default Auth client Circuit breaker strategy enabled","logger":"oci.circuit_breaker","filename":"__init__.py","lineno":28}
+{"timestamp":"2026-08-28T22:55:26.344178Z","level":"warning","event":"The `airflow.hooks.base.BaseHook` attribute is deprecated. Please use `'airflow.sdk.bases.hook.BaseHook'`.","category":"UserWarning","filename":"/opt/airflow/dags/meddata_pipeline.py","lineno":11,"logger":"py.warnings"}
+{"timestamp":"2026-08-28T22:55:26.360865Z","level":"info","event":"[INGESTAO] Baixando dados para SP/2024/08","logger":"task.stdout"}
+{"timestamp":"2026-08-28T22:55:26.362078Z","level":"info","event":"==================================================","logger":"task.stdout"}
+{"timestamp":"2026-08-28T22:55:26.362794Z","level":"info","event":"INICIANDO INGESTÃO DE DADOS","logger":"task.stdout"}
+{"timestamp":"2026-08-28T22:55:26.363367Z","level":"info","event":"UF: SP | Ano: 2024 | Mês: 08","logger":"task.stdout"}
+{"timestamp":"2026-08-28T22:55:26.363909Z","level":"info","event":"Upload para OCI: NÃO","logger":"task.stdout"}
+{"timestamp":"2026-08-28T22:55:26.364513Z","level":"info","event":"==================================================","logger":"task.stdout"}
+{"timestamp":"2026-08-28T22:55:26.365028Z","level":"info","event":"[SIH] Baixando dados: SP 2024/08","logger":"task.stdout"}
+{"timestamp":"2026-08-28T22:55:28.860208Z","level":"error","event":"\rDownloading sih:   0%|          | 0/3 [00:00<?, ?file/s]","logger":"task.stderr"}
+{"timestamp":"2026-08-28T22:55:28.876110Z","level":"error","event":"\rERSP2408.parquet: 0.00B [00:00, ?B/s]\u001b[A","logger":"task.stderr"}
+{"timestamp":"2026-08-28T22:55:28.877113Z","level":"error","event":"","logger":"task.stderr"}
+{"timestamp":"2026-08-28T22:55:28.880856Z","level":"error","event":"\rRJSP2408.parquet: 0.00B [00:00, ?B/s]\u001b[A\u001b[A","logger":"task.stderr"}
+{"timestamp":"2026-08-28T22:55:28.881623Z","level":"error","event":"","logger":"task.stderr"}
+{"timestamp":"2026-08-28T22:55:28.882330Z","level":"error","event":"","logger":"task.stderr"}
+{"timestamp":"2026-08-28T22:55:28.888071Z","level":"error","event":"\rRDSP2408.parquet: 0.00B [00:00, ?B/s]\u001b[A\u001b[A\u001b[A\rERSP2408.parquet: 0.00B [00:00, ?B/s]","logger":"task.stderr"}
+{"timestamp":"2026-08-28T22:55:28.889153Z","level":"error","event":"\rRJSP2408.parquet: 0.00B [00:00, ?B/s]","logger":"task.stderr"}
+{"timestamp":"2026-08-28T22:55:28.891900Z","level":"error","event":"\rRDSP2408.parquet: 0.00B [00:00, ?B/s]","logger":"task.stderr"}
+{"timestamp":"2026-08-28T22:55:28.892770Z","level":"error","event":"\rDownloading sih: 100%|██████████| 3/3 [00:00<00:00, 91.01file/s]","logger":"task.stderr"}
+{"timestamp":"2026-08-28T22:55:29.503060Z","level":"info","event":"[SIH] Carregado: 246,085 registros","logger":"task.stdout"}
+{"timestamp":"2026-08-28T22:55:32.289075Z","level":"info","event":"[SIH] Salvo localmente em: /opt/airflow/data/raw/sih_SP_2024_08.parquet","logger":"task.stdout"}
+{"timestamp":"2026-08-28T22:55:32.289682Z","level":"info","event":"[CNES] Baixando dados: SP 2024/08","logger":"task.stdout"}
+{"timestamp":"2026-08-28T22:55:34.403826Z","level":"error","event":"\rDownloading cnes:   0%|          | 0/1 [00:00<?, ?file/s]","logger":"task.stderr"}
+{"timestamp":"2026-08-28T22:55:35.833846Z","level":"error","event":"\rLTSP2408.parquet: 0.00B [00:00, ?B/s]\u001b[A","logger":"task.stderr"}
+{"timestamp":"2026-08-28T22:55:35.834825Z","level":"error","event":"\rLTSP2408.parquet:   0%|          | 0.00/98.6k [00:00<?, ?B/s]\u001b[A","logger":"task.stderr"}
+{"timestamp":"2026-08-28T22:55:35.905573Z","level":"error","event":"\rLTSP2408.parquet:  66%|██████▋   | 65.5k/98.6k [00:00<00:00, 438MB/s]\u001b[A","logger":"task.stderr"}
+{"timestamp":"2026-08-28T22:55:35.929603Z","level":"error","event":"\rLTSP2408.parquet: 100%|██████████| 98.6k/98.6k [00:00<00:00, 1.37MB/s]\u001b[A\rLTSP2408.parquet: 100%|██████████| 98.6k/98.6k [00:00<00:00, 1.03MB/s]","logger":"task.stderr"}
+{"timestamp":"2026-08-28T22:55:35.931502Z","level":"error","event":"\rDownloading cnes: 100%|██████████| 1/1 [00:01<00:00,  1.53s/file]\rDownloading cnes: 100%|██████████| 1/1 [00:01<00:00,  1.53s/file]","logger":"task.stderr"}
+{"timestamp":"2026-08-28T22:55:35.939669Z","level":"info","event":"[CNES] Carregado: 8,445 registros","logger":"task.stdout"}
+{"timestamp":"2026-08-28T22:55:36.012135Z","level":"info","event":"[CNES] Salvo localmente em: /opt/airflow/data/raw/cnes_SP_2024_08.parquet","logger":"task.stdout"}
+{"timestamp":"2026-08-28T22:55:36.012921Z","level":"info","event":"[IBGE] Carregando dados para SP","logger":"task.stdout"}
+{"timestamp":"2026-08-28T22:55:36.246423Z","level":"info","event":"[IBGE] Carregado: 645 municípios","logger":"task.stdout"}
+{"timestamp":"2026-08-28T22:55:36.273870Z","level":"info","event":"[IBGE] Salvo localmente em: /opt/airflow/data/reference/ibge_SP.parquet","logger":"task.stdout"}
+{"timestamp":"2026-08-28T22:55:36.274690Z","level":"info","event":"==================================================","logger":"task.stdout"}
+{"timestamp":"2026-08-28T22:55:36.275302Z","level":"info","event":"RESUMO DA INGESTÃO","logger":"task.stdout"}
+{"timestamp":"2026-08-28T22:55:36.275855Z","level":"info","event":"SIH        | OK    |  246,085 registros","logger":"task.stdout"}
+{"timestamp":"2026-08-28T22:55:36.276514Z","level":"info","event":"CNES       | OK    |    8,445 registros","logger":"task.stdout"}
+{"timestamp":"2026-08-28T22:55:36.277065Z","level":"info","event":"IBGE       | OK    |      645 registros","logger":"task.stdout"}
+{"timestamp":"2026-08-28T22:55:36.277572Z","level":"info","event":"==================================================","logger":"task.stdout"}
+{"timestamp":"2026-08-28T22:55:36.278062Z","level":"info","event":"[INGESTAO] Concluída com sucesso.","logger":"task.stdout"}
+{"timestamp":"2026-08-28T22:55:36.310741Z","level":"info","event":"Done. Returned value was: None","logger":"airflow.task.operators.airflow.providers.standard.operators.python.PythonOperator","filename":"python.py","lineno":229}

@@ -1,0 +1,25 @@
+{"timestamp":"2026-08-29T17:47:00.600464Z","level":"info","event":"DAG bundles loaded: dags-folder","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager","filename":"manager.py","lineno":209}
+{"timestamp":"2026-08-29T17:47:00.601479Z","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/meddata_pipeline.py","logger":"airflow.dag_processing.dagbag.BundleDagBag","filename":"dagbag.py","lineno":469}
+{"timestamp":"2026-08-29T17:47:01.018769Z","level":"info","event":"Default Auth client Circuit breaker strategy enabled","logger":"oci.circuit_breaker","filename":"__init__.py","lineno":28}
+{"timestamp":"2026-08-29T17:47:01.279085Z","level":"warning","event":"The `airflow.hooks.base.BaseHook` attribute is deprecated. Please use `'airflow.sdk.bases.hook.BaseHook'`.","category":"UserWarning","filename":"/opt/airflow/dags/meddata_pipeline.py","lineno":11,"logger":"py.warnings"}
+{"timestamp":"2026-08-29T17:47:01.295667Z","level":"info","event":"[INTEGRACAO] Gerando Star Schema para SP/2024/08","logger":"task.stdout"}
+{"timestamp":"2026-08-29T17:47:01.360821Z","level":"info","event":"GERANDO STAR SCHEMA PARA SP 2024/08","logger":"integracao","filename":"integracao.py","lineno":430}
+{"timestamp":"2026-08-29T17:47:01.360963Z","level":"info","event":"Gerando DIM_MUNICIPIO...","logger":"integracao","filename":"integracao.py","lineno":57}
+{"timestamp":"2026-08-29T17:47:01.377455Z","level":"info","event":"Incluídos 721 municípios de residência sem cadastro IBGE-SP.","logger":"integracao","filename":"integracao.py","lineno":92}
+{"timestamp":"2026-08-29T17:47:01.378544Z","level":"info","event":"DIM_MUNICIPIO gerada: 1,366 municípios","logger":"integracao","filename":"integracao.py","lineno":108}
+{"timestamp":"2026-08-29T17:47:01.378650Z","level":"info","event":"Gerando DIM_HOSPITAL...","logger":"integracao","filename":"integracao.py","lineno":114}
+{"timestamp":"2026-08-29T17:47:01.382735Z","level":"info","event":"DIM_HOSPITAL gerada: 1,428 hospitais","logger":"integracao","filename":"integracao.py","lineno":177}
+{"timestamp":"2026-08-29T17:47:01.382847Z","level":"info","event":"Gerando DIM_TEMPO...","logger":"integracao","filename":"integracao.py","lineno":183}
+{"timestamp":"2026-08-29T17:47:01.427651Z","level":"info","event":"DIM_TEMPO gerada: 1,175 datas únicas","logger":"integracao","filename":"integracao.py","lineno":208}
+{"timestamp":"2026-08-29T17:47:01.427783Z","level":"info","event":"Gerando FATO_INTERNACAO...","logger":"integracao","filename":"integracao.py","lineno":237}
+{"timestamp":"2026-08-29T17:47:04.182336Z","level":"info","event":"FATO_INTERNACAO gerada: 231,272 registros","logger":"integracao","filename":"integracao.py","lineno":364}
+{"timestamp":"2026-08-29T17:47:04.214607Z","level":"info","event":"DIM_MUNICIPIO salva: /opt/airflow/data/processado/dim_municipio_SP_2024_08.parquet","logger":"integracao","filename":"integracao.py","lineno":401}
+{"timestamp":"2026-08-29T17:47:04.545440Z","level":"info","event":"Upload concluído: meddata-gold/dim_municipio/SP/2024/08/dim_municipio_SP_2024_08.parquet","logger":"integracao","filename":"integracao.py","lineno":44}
+{"timestamp":"2026-08-29T17:47:04.588683Z","level":"info","event":"DIM_HOSPITAL salva: /opt/airflow/data/processado/dim_hospital_SP_2024_08.parquet","logger":"integracao","filename":"integracao.py","lineno":401}
+{"timestamp":"2026-08-29T17:47:04.748696Z","level":"info","event":"Upload concluído: meddata-gold/dim_hospital/SP/2024/08/dim_hospital_SP_2024_08.parquet","logger":"integracao","filename":"integracao.py","lineno":44}
+{"timestamp":"2026-08-29T17:47:04.775451Z","level":"info","event":"DIM_TEMPO salva: /opt/airflow/data/processado/dim_tempo_SP_2024_08.parquet","logger":"integracao","filename":"integracao.py","lineno":401}
+{"timestamp":"2026-08-29T17:47:04.935075Z","level":"info","event":"Upload concluído: meddata-gold/dim_tempo/SP/2024/08/dim_tempo_SP_2024_08.parquet","logger":"integracao","filename":"integracao.py","lineno":44}
+{"timestamp":"2026-08-29T17:47:05.384574Z","level":"info","event":"FATO_INTERNACAO salva: /opt/airflow/data/processado/fato_internacao_SP_2024_08.parquet","logger":"integracao","filename":"integracao.py","lineno":401}
+{"timestamp":"2026-08-29T17:47:05.855567Z","level":"info","event":"Upload concluído: meddata-gold/fato_internacao/SP/2024/08/fato_internacao_SP_2024_08.parquet","logger":"integracao","filename":"integracao.py","lineno":44}
+{"timestamp":"2026-08-29T17:47:05.862035Z","level":"info","event":"Done. Returned value was: None","logger":"airflow.task.operators.airflow.providers.standard.operators.python.PythonOperator","filename":"python.py","lineno":229}
+{"timestamp":"2026-08-29T17:47:05.866459Z","level":"info","event":"[INTEGRACAO] Concluída com sucesso.","logger":"task.stdout"}

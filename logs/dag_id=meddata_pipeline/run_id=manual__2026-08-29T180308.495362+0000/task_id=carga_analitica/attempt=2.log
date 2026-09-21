@@ -1,0 +1,37 @@
+{"timestamp":"2026-08-29T18:08:50.349782Z","level":"info","event":"DAG bundles loaded: dags-folder","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager","filename":"manager.py","lineno":209}
+{"timestamp":"2026-08-29T18:08:50.351156Z","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/meddata_pipeline.py","logger":"airflow.dag_processing.dagbag.BundleDagBag","filename":"dagbag.py","lineno":469}
+{"timestamp":"2026-08-29T18:08:50.849099Z","level":"info","event":"Default Auth client Circuit breaker strategy enabled","logger":"oci.circuit_breaker","filename":"__init__.py","lineno":28}
+{"timestamp":"2026-08-29T18:08:51.138730Z","level":"warning","event":"The `airflow.hooks.base.BaseHook` attribute is deprecated. Please use `'airflow.sdk.bases.hook.BaseHook'`.","category":"UserWarning","filename":"/opt/airflow/dags/meddata_pipeline.py","lineno":11,"logger":"py.warnings"}
+{"timestamp":"2026-08-29T18:08:51.156358Z","level":"info","event":"[CARGA] Carregando dados para SP/2024/08","logger":"task.stdout"}
+{"timestamp":"2026-08-29T18:08:51.163803Z","level":"info","event":"============================================================","logger":"task.stdout"}
+{"timestamp":"2026-08-29T18:08:51.164749Z","level":"info","event":"INICIANDO CARGA ANALITICA","logger":"task.stdout"}
+{"timestamp":"2026-08-29T18:08:51.165367Z","level":"info","event":"============================================================","logger":"task.stdout"}
+{"timestamp":"2026-08-29T18:08:51.165945Z","level":"info","event":"UF: SP","logger":"task.stdout"}
+{"timestamp":"2026-08-29T18:08:51.166500Z","level":"info","event":"Ano: 2024","logger":"task.stdout"}
+{"timestamp":"2026-08-29T18:08:51.167011Z","level":"info","event":"Mes: 08","logger":"task.stdout"}
+{"timestamp":"2026-08-29T18:08:51.167820Z","level":"info","event":"DSN: meddata_high","logger":"task.stdout"}
+{"timestamp":"2026-08-29T18:08:51.168369Z","level":"info","event":"Namespace: grtrhsatn1p6","logger":"task.stdout"}
+{"timestamp":"2026-08-29T18:08:51.168941Z","level":"info","event":"============================================================","logger":"task.stdout"}
+{"timestamp":"2026-08-29T18:08:51.369616Z","level":"info","event":"Conectado ao Autonomous Database como ADMIN","logger":"task.stdout"}
+{"timestamp":"2026-08-29T18:08:51.370571Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2026-08-29T18:08:51.371192Z","level":"info","event":"Carregando DIM_MUNICIPIO...","logger":"task.stdout"}
+{"timestamp":"2026-08-29T18:08:51.371775Z","level":"info","event":"  Arquivo: dim_municipio_SP_2024_08.parquet","logger":"task.stdout"}
+{"timestamp":"2026-08-29T18:08:53.099876Z","level":"info","event":"  DIM_MUNICIPIO carregada com sucesso","logger":"task.stdout"}
+{"timestamp":"2026-08-29T18:08:53.100686Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2026-08-29T18:08:53.101252Z","level":"info","event":"Carregando DIM_HOSPITAL...","logger":"task.stdout"}
+{"timestamp":"2026-08-29T18:08:53.101940Z","level":"info","event":"  Arquivo: dim_hospital_SP_2024_08.parquet","logger":"task.stdout"}
+{"timestamp":"2026-08-29T18:08:54.952308Z","level":"info","event":"  DIM_HOSPITAL carregada com sucesso","logger":"task.stdout"}
+{"timestamp":"2026-08-29T18:08:54.953205Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2026-08-29T18:08:54.953991Z","level":"info","event":"Carregando DIM_TEMPO...","logger":"task.stdout"}
+{"timestamp":"2026-08-29T18:08:54.954585Z","level":"info","event":"  Arquivo: dim_tempo_SP_2024_08.parquet","logger":"task.stdout"}
+{"timestamp":"2026-08-29T18:08:56.639785Z","level":"info","event":"  DIM_TEMPO carregada com sucesso","logger":"task.stdout"}
+{"timestamp":"2026-08-29T18:08:56.649453Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2026-08-29T18:08:56.650323Z","level":"info","event":"Carregando FATO_INTERNACAO...","logger":"task.stdout"}
+{"timestamp":"2026-08-29T18:08:56.651127Z","level":"info","event":"  Arquivo: fato_internacao_SP_2024_08.parquet","logger":"task.stdout"}
+{"timestamp":"2026-08-29T18:09:00.767309Z","level":"info","event":"  FATO_INTERNACAO carregada com sucesso","logger":"task.stdout"}
+{"timestamp":"2026-08-29T18:09:00.780225Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2026-08-29T18:09:00.781152Z","level":"info","event":"============================================================","logger":"task.stdout"}
+{"timestamp":"2026-08-29T18:09:00.781764Z","level":"info","event":"CARGA CONCLUIDA COM SUCESSO (4/4 tabelas)","logger":"task.stdout"}
+{"timestamp":"2026-08-29T18:09:00.782428Z","level":"info","event":"============================================================","logger":"task.stdout"}
+{"timestamp":"2026-08-29T18:09:00.782983Z","level":"info","event":"[CARGA] Concluída com sucesso.","logger":"task.stdout"}
+{"timestamp":"2026-08-29T18:09:00.780515Z","level":"info","event":"Done. Returned value was: None","logger":"airflow.task.operators.airflow.providers.standard.operators.python.PythonOperator","filename":"python.py","lineno":229}

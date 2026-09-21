@@ -1,0 +1,90 @@
+{"timestamp":"2026-08-28T21:31:12.451861Z","level":"info","event":"DAG bundles loaded: dags-folder","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager","filename":"manager.py","lineno":209}
+{"timestamp":"2026-08-28T21:31:12.453373Z","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/meddata_pipeline.py","logger":"airflow.dag_processing.dagbag.BundleDagBag","filename":"dagbag.py","lineno":469}
+{"timestamp":"2026-08-28T21:31:12.938289Z","level":"info","event":"Default Auth client Circuit breaker strategy enabled","logger":"oci.circuit_breaker","filename":"__init__.py","lineno":28}
+{"timestamp":"2026-08-28T21:31:13.238186Z","level":"warning","event":"The `airflow.hooks.base.BaseHook` attribute is deprecated. Please use `'airflow.sdk.bases.hook.BaseHook'`.","category":"UserWarning","filename":"/opt/airflow/dags/meddata_pipeline.py","lineno":11,"logger":"py.warnings"}
+{"timestamp":"2026-08-28T21:31:13.259270Z","level":"info","event":"[TRANSFORMACAO] Transformando dados para SP/2024/08","logger":"task.stdout"}
+{"timestamp":"2026-08-28T21:31:13.825812Z","level":"info","event":"Iniciando transformacao para SP 2024/08","logger":"transformacao","filename":"transformacao.py","lineno":352}
+{"timestamp":"2026-08-28T21:31:13.825972Z","level":"info","event":"Transformando SIH: 246,085 registros para SP 2024/08","logger":"transformacao","filename":"transformacao.py","lineno":58}
+{"timestamp":"2026-08-28T21:31:13.827067Z","level":"info","event":"SIH transformado: 246,085 registros","logger":"transformacao","filename":"transformacao.py","lineno":142}
+{"timestamp":"2026-08-28T21:31:13.827143Z","level":"info","event":"Transformando CNES: 8,445 registros para SP 2024/08","logger":"transformacao","filename":"transformacao.py","lineno":153}
+{"timestamp":"2026-08-28T21:31:13.852188Z","level":"info","event":"CNES transformado: 1,428 hospitais","logger":"transformacao","filename":"transformacao.py","lineno":229}
+{"timestamp":"2026-08-28T21:31:13.852432Z","level":"info","event":"Transformando IBGE: 645 municipios para SP","logger":"transformacao","filename":"transformacao.py","lineno":238}
+{"timestamp":"2026-08-28T21:31:13.852516Z","level":"info","event":"Colunas encontradas: ['codigo_ibge', 'nome', 'uf', 'latitude', 'longitude']","logger":"transformacao","filename":"transformacao.py","lineno":243}
+{"timestamp":"2026-08-28T21:31:13.854672Z","level":"info","event":"IBGE transformado: 645 municipios","logger":"transformacao","filename":"transformacao.py","lineno":265}
+{"timestamp":"2026-08-28T21:31:13.862273Z","level":"info","event":"SIH salvo: /opt/airflow/data/processado/sih_transformado_SP_2024_08.parquet (246,085 registros)","logger":"transformacao","filename":"transformacao.py","lineno":283}
+{"timestamp":"2026-08-28T21:31:13.896313Z","level":"info","event":"CNES salvo: /opt/airflow/data/processado/cnes_transformado_SP_2024_08.parquet (1,428 registros)","logger":"transformacao","filename":"transformacao.py","lineno":295}
+{"timestamp":"2026-08-28T21:31:13.917168Z","level":"info","event":"IBGE salvo: /opt/airflow/data/processado/ibge_transformado_SP.parquet (645 registros)","logger":"transformacao","filename":"transformacao.py","lineno":307}
+{"timestamp":"2026-08-28T21:31:13.918253Z","level":"info","event":"[TRANSFORMACAO] Concluída com sucesso.","logger":"task.stdout"}
+{"timestamp":"2026-08-28T21:31:13.957802Z","level":"info","event":"Done. Returned value was: None","logger":"airflow.task.operators.airflow.providers.standard.operators.python.PythonOperator","filename":"python.py","lineno":229}
+{"timestamp":"2026-08-28T22:50:08.913475Z","level":"info","event":"DAG bundles loaded: dags-folder","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager","filename":"manager.py","lineno":209}
+{"timestamp":"2026-08-28T22:50:08.914902Z","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/meddata_pipeline.py","logger":"airflow.dag_processing.dagbag.BundleDagBag","filename":"dagbag.py","lineno":469}
+{"timestamp":"2026-08-28T22:50:09.411009Z","level":"info","event":"Default Auth client Circuit breaker strategy enabled","logger":"oci.circuit_breaker","filename":"__init__.py","lineno":28}
+{"timestamp":"2026-08-28T22:50:09.715756Z","level":"warning","event":"The `airflow.hooks.base.BaseHook` attribute is deprecated. Please use `'airflow.sdk.bases.hook.BaseHook'`.","category":"UserWarning","filename":"/opt/airflow/dags/meddata_pipeline.py","lineno":11,"logger":"py.warnings"}
+{"timestamp":"2026-08-28T22:50:09.733712Z","level":"info","event":"[TRANSFORMACAO] Transformando dados para SP/2024/08","logger":"task.stdout"}
+{"timestamp":"2026-08-28T22:50:10.321291Z","level":"info","event":"Iniciando transformacao para SP 2024/08","logger":"transformacao","filename":"transformacao.py","lineno":369}
+{"timestamp":"2026-08-28T22:50:10.321461Z","level":"info","event":"Transformando SIH: 246,085 registros para SP 2024/08","logger":"transformacao","filename":"transformacao.py","lineno":57}
+{"timestamp":"2026-08-28T22:50:11.269236Z","level":"info","event":"SIH transformado: 231,272 registros","logger":"transformacao","filename":"transformacao.py","lineno":160}
+{"timestamp":"2026-08-28T22:50:11.269446Z","level":"info","event":"Transformando CNES: 8,445 registros para SP 2024/08","logger":"transformacao","filename":"transformacao.py","lineno":170}
+{"timestamp":"2026-08-28T22:50:11.295500Z","level":"info","event":"CNES transformado: 1,428 hospitais","logger":"transformacao","filename":"transformacao.py","lineno":246}
+{"timestamp":"2026-08-28T22:50:11.295818Z","level":"info","event":"Transformando IBGE: 645 municipios para SP","logger":"transformacao","filename":"transformacao.py","lineno":255}
+{"timestamp":"2026-08-28T22:50:11.295926Z","level":"info","event":"Colunas encontradas: ['codigo_ibge', 'nome', 'uf', 'latitude', 'longitude']","logger":"transformacao","filename":"transformacao.py","lineno":260}
+{"timestamp":"2026-08-28T22:50:11.298369Z","level":"info","event":"IBGE transformado: 645 municipios","logger":"transformacao","filename":"transformacao.py","lineno":282}
+{"timestamp":"2026-08-28T22:50:11.660776Z","level":"info","event":"SIH salvo: /opt/airflow/data/processado/sih_transformado_SP_2024_08.parquet (231,272 registros)","logger":"transformacao","filename":"transformacao.py","lineno":300}
+{"timestamp":"2026-08-28T22:50:11.698815Z","level":"info","event":"CNES salvo: /opt/airflow/data/processado/cnes_transformado_SP_2024_08.parquet (1,428 registros)","logger":"transformacao","filename":"transformacao.py","lineno":312}
+{"timestamp":"2026-08-28T22:50:11.722386Z","level":"info","event":"IBGE salvo: /opt/airflow/data/processado/ibge_transformado_SP.parquet (645 registros)","logger":"transformacao","filename":"transformacao.py","lineno":324}
+{"timestamp":"2026-08-28T22:50:11.735002Z","level":"info","event":"[TRANSFORMACAO] Concluída com sucesso.","logger":"task.stdout"}
+{"timestamp":"2026-08-28T22:50:11.786194Z","level":"info","event":"Done. Returned value was: None","logger":"airflow.task.operators.airflow.providers.standard.operators.python.PythonOperator","filename":"python.py","lineno":229}
+{"timestamp":"2026-08-29T01:55:16.115405Z","level":"info","event":"DAG bundles loaded: dags-folder","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager","filename":"manager.py","lineno":209}
+{"timestamp":"2026-08-29T01:55:16.116690Z","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/meddata_pipeline.py","logger":"airflow.dag_processing.dagbag.BundleDagBag","filename":"dagbag.py","lineno":469}
+{"timestamp":"2026-08-29T01:55:16.605911Z","level":"info","event":"Default Auth client Circuit breaker strategy enabled","logger":"oci.circuit_breaker","filename":"__init__.py","lineno":28}
+{"timestamp":"2026-08-29T01:55:16.919814Z","level":"warning","event":"The `airflow.hooks.base.BaseHook` attribute is deprecated. Please use `'airflow.sdk.bases.hook.BaseHook'`.","category":"UserWarning","filename":"/opt/airflow/dags/meddata_pipeline.py","lineno":11,"logger":"py.warnings"}
+{"timestamp":"2026-08-29T01:55:16.938911Z","level":"info","event":"[TRANSFORMACAO] Transformando dados para SP/2024/08","logger":"task.stdout"}
+{"timestamp":"2026-08-29T01:55:17.627989Z","level":"info","event":"Iniciando transformacao para SP 2024/08","logger":"transformacao","filename":"transformacao.py","lineno":369}
+{"timestamp":"2026-08-29T01:55:17.628230Z","level":"info","event":"Transformando SIH: 246,085 registros para SP 2024/08","logger":"transformacao","filename":"transformacao.py","lineno":57}
+{"timestamp":"2026-08-29T01:55:19.124251Z","level":"info","event":"SIH transformado: 231,272 registros","logger":"transformacao","filename":"transformacao.py","lineno":160}
+{"timestamp":"2026-08-29T01:55:19.124469Z","level":"info","event":"Transformando CNES: 8,445 registros para SP 2024/08","logger":"transformacao","filename":"transformacao.py","lineno":170}
+{"timestamp":"2026-08-29T01:55:19.150721Z","level":"info","event":"CNES transformado: 1,428 hospitais","logger":"transformacao","filename":"transformacao.py","lineno":246}
+{"timestamp":"2026-08-29T01:55:19.150964Z","level":"info","event":"Transformando IBGE: 645 municipios para SP","logger":"transformacao","filename":"transformacao.py","lineno":255}
+{"timestamp":"2026-08-29T01:55:19.151046Z","level":"info","event":"Colunas encontradas: ['codigo_ibge', 'nome', 'uf', 'latitude', 'longitude']","logger":"transformacao","filename":"transformacao.py","lineno":260}
+{"timestamp":"2026-08-29T01:55:19.154552Z","level":"info","event":"IBGE transformado: 645 municipios","logger":"transformacao","filename":"transformacao.py","lineno":282}
+{"timestamp":"2026-08-29T01:55:19.492385Z","level":"info","event":"SIH salvo: /opt/airflow/data/processado/sih_transformado_SP_2024_08.parquet (231,272 registros)","logger":"transformacao","filename":"transformacao.py","lineno":300}
+{"timestamp":"2026-08-29T01:55:19.523887Z","level":"info","event":"CNES salvo: /opt/airflow/data/processado/cnes_transformado_SP_2024_08.parquet (1,428 registros)","logger":"transformacao","filename":"transformacao.py","lineno":312}
+{"timestamp":"2026-08-29T01:55:19.545933Z","level":"info","event":"IBGE salvo: /opt/airflow/data/processado/ibge_transformado_SP.parquet (645 registros)","logger":"transformacao","filename":"transformacao.py","lineno":324}
+{"timestamp":"2026-08-29T01:55:19.560589Z","level":"info","event":"[TRANSFORMACAO] Concluída com sucesso.","logger":"task.stdout"}
+{"timestamp":"2026-08-29T01:55:19.611005Z","level":"info","event":"Done. Returned value was: None","logger":"airflow.task.operators.airflow.providers.standard.operators.python.PythonOperator","filename":"python.py","lineno":229}
+{"timestamp":"2026-08-29T03:39:32.438052Z","level":"info","event":"DAG bundles loaded: dags-folder","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager","filename":"manager.py","lineno":209}
+{"timestamp":"2026-08-29T03:39:32.439282Z","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/meddata_pipeline.py","logger":"airflow.dag_processing.dagbag.BundleDagBag","filename":"dagbag.py","lineno":469}
+{"timestamp":"2026-08-29T03:39:07.414449Z","level":"info","event":"Default Auth client Circuit breaker strategy enabled","logger":"oci.circuit_breaker","filename":"__init__.py","lineno":28}
+{"timestamp":"2026-08-29T03:39:33.900414Z","level":"warning","event":"The `airflow.hooks.base.BaseHook` attribute is deprecated. Please use `'airflow.sdk.bases.hook.BaseHook'`.","category":"UserWarning","filename":"/opt/airflow/dags/meddata_pipeline.py","lineno":11,"logger":"py.warnings"}
+{"timestamp":"2026-08-29T03:39:33.921148Z","level":"info","event":"[TRANSFORMACAO] Transformando dados para SP/2024/08","logger":"task.stdout"}
+{"timestamp":"2026-08-29T03:39:34.642264Z","level":"info","event":"Iniciando transformacao para SP 2024/08","logger":"transformacao","filename":"transformacao.py","lineno":369}
+{"timestamp":"2026-08-29T03:39:34.642524Z","level":"info","event":"Transformando SIH: 246,085 registros para SP 2024/08","logger":"transformacao","filename":"transformacao.py","lineno":57}
+{"timestamp":"2026-08-29T03:39:35.981976Z","level":"info","event":"SIH transformado: 231,272 registros","logger":"transformacao","filename":"transformacao.py","lineno":160}
+{"timestamp":"2026-08-29T03:39:35.982163Z","level":"info","event":"Transformando CNES: 8,445 registros para SP 2024/08","logger":"transformacao","filename":"transformacao.py","lineno":170}
+{"timestamp":"2026-08-29T03:39:36.007240Z","level":"info","event":"CNES transformado: 1,428 hospitais","logger":"transformacao","filename":"transformacao.py","lineno":246}
+{"timestamp":"2026-08-29T03:39:36.007517Z","level":"info","event":"Transformando IBGE: 645 municipios para SP","logger":"transformacao","filename":"transformacao.py","lineno":255}
+{"timestamp":"2026-08-29T03:39:36.007673Z","level":"info","event":"Colunas encontradas: ['codigo_ibge', 'nome', 'uf', 'latitude', 'longitude']","logger":"transformacao","filename":"transformacao.py","lineno":260}
+{"timestamp":"2026-08-29T03:39:36.009730Z","level":"info","event":"IBGE transformado: 645 municipios","logger":"transformacao","filename":"transformacao.py","lineno":282}
+{"timestamp":"2026-08-29T03:39:36.323138Z","level":"info","event":"SIH salvo: /opt/airflow/data/processado/sih_transformado_SP_2024_08.parquet (231,272 registros)","logger":"transformacao","filename":"transformacao.py","lineno":300}
+{"timestamp":"2026-08-29T03:39:36.353496Z","level":"info","event":"CNES salvo: /opt/airflow/data/processado/cnes_transformado_SP_2024_08.parquet (1,428 registros)","logger":"transformacao","filename":"transformacao.py","lineno":312}
+{"timestamp":"2026-08-29T03:39:36.373393Z","level":"info","event":"IBGE salvo: /opt/airflow/data/processado/ibge_transformado_SP.parquet (645 registros)","logger":"transformacao","filename":"transformacao.py","lineno":324}
+{"timestamp":"2026-08-29T03:39:36.384885Z","level":"info","event":"[TRANSFORMACAO] Concluída com sucesso.","logger":"task.stdout"}
+{"timestamp":"2026-08-29T03:39:36.423780Z","level":"info","event":"Done. Returned value was: None","logger":"airflow.task.operators.airflow.providers.standard.operators.python.PythonOperator","filename":"python.py","lineno":229}
+{"timestamp":"2026-08-29T17:20:41.738778Z","level":"info","event":"DAG bundles loaded: dags-folder","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager","filename":"manager.py","lineno":209}
+{"timestamp":"2026-08-29T17:20:41.740373Z","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/meddata_pipeline.py","logger":"airflow.dag_processing.dagbag.BundleDagBag","filename":"dagbag.py","lineno":469}
+{"timestamp":"2026-08-29T17:20:42.239916Z","level":"info","event":"Default Auth client Circuit breaker strategy enabled","logger":"oci.circuit_breaker","filename":"__init__.py","lineno":28}
+{"timestamp":"2026-08-29T17:20:42.569121Z","level":"warning","event":"The `airflow.hooks.base.BaseHook` attribute is deprecated. Please use `'airflow.sdk.bases.hook.BaseHook'`.","category":"UserWarning","filename":"/opt/airflow/dags/meddata_pipeline.py","lineno":11,"logger":"py.warnings"}
+{"timestamp":"2026-08-29T17:20:42.587418Z","level":"info","event":"[TRANSFORMACAO] Transformando dados para SP/2024/08","logger":"task.stdout"}
+{"timestamp":"2026-08-29T17:20:43.390933Z","level":"info","event":"Iniciando transformacao para SP 2024/08","logger":"transformacao","filename":"transformacao.py","lineno":369}
+{"timestamp":"2026-08-29T17:20:43.391162Z","level":"info","event":"Transformando SIH: 246,085 registros para SP 2024/08","logger":"transformacao","filename":"transformacao.py","lineno":57}
+{"timestamp":"2026-08-29T17:20:44.262872Z","level":"info","event":"SIH transformado: 231,272 registros","logger":"transformacao","filename":"transformacao.py","lineno":160}
+{"timestamp":"2026-08-29T17:20:44.263105Z","level":"info","event":"Transformando CNES: 8,445 registros para SP 2024/08","logger":"transformacao","filename":"transformacao.py","lineno":170}
+{"timestamp":"2026-08-29T17:20:44.287377Z","level":"info","event":"CNES transformado: 1,428 hospitais","logger":"transformacao","filename":"transformacao.py","lineno":246}
+{"timestamp":"2026-08-29T17:20:44.287862Z","level":"info","event":"Transformando IBGE: 645 municipios para SP","logger":"transformacao","filename":"transformacao.py","lineno":255}
+{"timestamp":"2026-08-29T17:20:44.288078Z","level":"info","event":"Colunas encontradas: ['codigo_ibge', 'nome', 'uf', 'latitude', 'longitude']","logger":"transformacao","filename":"transformacao.py","lineno":260}
+{"timestamp":"2026-08-29T17:20:44.290863Z","level":"info","event":"IBGE transformado: 645 municipios","logger":"transformacao","filename":"transformacao.py","lineno":282}
+{"timestamp":"2026-08-29T17:20:44.657915Z","level":"info","event":"SIH salvo: /opt/airflow/data/processado/sih_transformado_SP_2024_08.parquet (231,272 registros)","logger":"transformacao","filename":"transformacao.py","lineno":300}
+{"timestamp":"2026-08-29T17:20:44.702133Z","level":"info","event":"CNES salvo: /opt/airflow/data/processado/cnes_transformado_SP_2024_08.parquet (1,428 registros)","logger":"transformacao","filename":"transformacao.py","lineno":312}
+{"timestamp":"2026-08-29T17:20:44.733590Z","level":"info","event":"IBGE salvo: /opt/airflow/data/processado/ibge_transformado_SP.parquet (645 registros)","logger":"transformacao","filename":"transformacao.py","lineno":324}
+{"timestamp":"2026-08-29T17:20:44.745389Z","level":"info","event":"[TRANSFORMACAO] Concluída com sucesso.","logger":"task.stdout"}
+{"timestamp":"2026-08-29T17:20:44.798126Z","level":"info","event":"Done. Returned value was: None","logger":"airflow.task.operators.airflow.providers.standard.operators.python.PythonOperator","filename":"python.py","lineno":229}

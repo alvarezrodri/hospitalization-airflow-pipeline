@@ -1,0 +1,52 @@
+{"timestamp":"2026-08-29T17:52:11.457567Z","level":"info","event":"DAG bundles loaded: dags-folder","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager","filename":"manager.py","lineno":209}
+{"timestamp":"2026-08-29T17:52:11.458984Z","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/meddata_pipeline.py","logger":"airflow.dag_processing.dagbag.BundleDagBag","filename":"dagbag.py","lineno":469}
+{"timestamp":"2026-08-29T17:52:11.957377Z","level":"info","event":"Default Auth client Circuit breaker strategy enabled","logger":"oci.circuit_breaker","filename":"__init__.py","lineno":28}
+{"timestamp":"2026-08-29T17:52:12.308342Z","level":"warning","event":"The `airflow.hooks.base.BaseHook` attribute is deprecated. Please use `'airflow.sdk.bases.hook.BaseHook'`.","category":"UserWarning","filename":"/opt/airflow/dags/meddata_pipeline.py","lineno":11,"logger":"py.warnings"}
+{"timestamp":"2026-08-29T17:52:12.327482Z","level":"info","event":"[CARGA] Carregando dados para SP/2024/08","logger":"task.stdout"}
+{"timestamp":"2026-08-29T17:52:12.335165Z","level":"info","event":"============================================================","logger":"task.stdout"}
+{"timestamp":"2026-08-29T17:52:12.336013Z","level":"info","event":"INICIANDO CARGA ANALITICA","logger":"task.stdout"}
+{"timestamp":"2026-08-29T17:52:12.336627Z","level":"info","event":"============================================================","logger":"task.stdout"}
+{"timestamp":"2026-08-29T17:52:12.337235Z","level":"info","event":"UF: SP","logger":"task.stdout"}
+{"timestamp":"2026-08-29T17:52:12.337858Z","level":"info","event":"Ano: 2024","logger":"task.stdout"}
+{"timestamp":"2026-08-29T17:52:12.338485Z","level":"info","event":"Mes: 08","logger":"task.stdout"}
+{"timestamp":"2026-08-29T17:52:12.339343Z","level":"info","event":"DSN: meddata_high","logger":"task.stdout"}
+{"timestamp":"2026-08-29T17:52:12.340498Z","level":"info","event":"Namespace: grtrhsatn1p6","logger":"task.stdout"}
+{"timestamp":"2026-08-29T17:52:12.341425Z","level":"info","event":"============================================================","logger":"task.stdout"}
+{"timestamp":"2026-08-29T17:52:12.525497Z","level":"info","event":"Conectado ao Autonomous Database como ADMIN","logger":"task.stdout"}
+{"timestamp":"2026-08-29T17:52:12.526530Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2026-08-29T17:52:12.527201Z","level":"info","event":"Carregando DIM_MUNICIPIO...","logger":"task.stdout"}
+{"timestamp":"2026-08-29T17:52:12.527850Z","level":"info","event":"  Arquivo: dim_municipio_SP_2024_08.parquet","logger":"task.stdout"}
+{"timestamp":"2026-08-29T17:52:12.584669Z","level":"info","event":"  Erro ao carregar DIM_MUNICIPIO: ORA-20005: Table \"ADMIN\".\"DIM_MUNICIPIO\" does not exist","logger":"task.stdout"}
+{"timestamp":"2026-08-29T17:52:12.585537Z","level":"info","event":"ORA-06512: at \"C##CLOUD$SERVICE.DBMS_CLOUD$PDBCS_260821_1_0\", line 2291","logger":"task.stdout"}
+{"timestamp":"2026-08-29T17:52:12.586145Z","level":"info","event":"ORA-06512: at \"C##CLOUD$SERVICE.DBMS_CLOUD$PDBCS_260821_1_0\", line 14129","logger":"task.stdout"}
+{"timestamp":"2026-08-29T17:52:12.586678Z","level":"info","event":"ORA-06512: at \"C##CLOUD$SERVICE.DBMS_CLOUD$PDBCS_260821_1_0\", line 14150","logger":"task.stdout"}
+{"timestamp":"2026-08-29T17:52:12.587206Z","level":"info","event":"ORA-06512: at line 2","logger":"task.stdout"}
+{"timestamp":"2026-08-29T17:52:12.587813Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2026-08-29T17:52:12.588326Z","level":"info","event":"Carregando DIM_HOSPITAL...","logger":"task.stdout"}
+{"timestamp":"2026-08-29T17:52:12.588830Z","level":"info","event":"  Arquivo: dim_hospital_SP_2024_08.parquet","logger":"task.stdout"}
+{"timestamp":"2026-08-29T17:52:12.603359Z","level":"info","event":"  Erro ao carregar DIM_HOSPITAL: ORA-20005: Table \"ADMIN\".\"DIM_HOSPITAL\" does not exist","logger":"task.stdout"}
+{"timestamp":"2026-08-29T17:52:12.604171Z","level":"info","event":"ORA-06512: at \"C##CLOUD$SERVICE.DBMS_CLOUD$PDBCS_260821_1_0\", line 2291","logger":"task.stdout"}
+{"timestamp":"2026-08-29T17:52:12.604756Z","level":"info","event":"ORA-06512: at \"C##CLOUD$SERVICE.DBMS_CLOUD$PDBCS_260821_1_0\", line 14129","logger":"task.stdout"}
+{"timestamp":"2026-08-29T17:52:12.605282Z","level":"info","event":"ORA-06512: at \"C##CLOUD$SERVICE.DBMS_CLOUD$PDBCS_260821_1_0\", line 14150","logger":"task.stdout"}
+{"timestamp":"2026-08-29T17:52:12.605807Z","level":"info","event":"ORA-06512: at line 2","logger":"task.stdout"}
+{"timestamp":"2026-08-29T17:52:12.606360Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2026-08-29T17:52:12.606948Z","level":"info","event":"Carregando DIM_TEMPO...","logger":"task.stdout"}
+{"timestamp":"2026-08-29T17:52:12.607458Z","level":"info","event":"  Arquivo: dim_tempo_SP_2024_08.parquet","logger":"task.stdout"}
+{"timestamp":"2026-08-29T17:52:12.622237Z","level":"info","event":"  Erro ao carregar DIM_TEMPO: ORA-20005: Table \"ADMIN\".\"DIM_TEMPO\" does not exist","logger":"task.stdout"}
+{"timestamp":"2026-08-29T17:52:12.623264Z","level":"info","event":"ORA-06512: at \"C##CLOUD$SERVICE.DBMS_CLOUD$PDBCS_260821_1_0\", line 2291","logger":"task.stdout"}
+{"timestamp":"2026-08-29T17:52:12.623893Z","level":"info","event":"ORA-06512: at \"C##CLOUD$SERVICE.DBMS_CLOUD$PDBCS_260821_1_0\", line 14129","logger":"task.stdout"}
+{"timestamp":"2026-08-29T17:52:12.624449Z","level":"info","event":"ORA-06512: at \"C##CLOUD$SERVICE.DBMS_CLOUD$PDBCS_260821_1_0\", line 14150","logger":"task.stdout"}
+{"timestamp":"2026-08-29T17:52:12.624964Z","level":"info","event":"ORA-06512: at line 2","logger":"task.stdout"}
+{"timestamp":"2026-08-29T17:52:12.625488Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2026-08-29T17:52:12.626071Z","level":"info","event":"Carregando FATO_INTERNACAO...","logger":"task.stdout"}
+{"timestamp":"2026-08-29T17:52:12.626683Z","level":"info","event":"  Arquivo: fato_internacao_SP_2024_08.parquet","logger":"task.stdout"}
+{"timestamp":"2026-08-29T17:52:12.641411Z","level":"info","event":"  Erro ao carregar FATO_INTERNACAO: ORA-20005: Table \"ADMIN\".\"FATO_INTERNACAO\" does not exist","logger":"task.stdout"}
+{"timestamp":"2026-08-29T17:52:12.642335Z","level":"info","event":"ORA-06512: at \"C##CLOUD$SERVICE.DBMS_CLOUD$PDBCS_260821_1_0\", line 2291","logger":"task.stdout"}
+{"timestamp":"2026-08-29T17:52:12.642898Z","level":"info","event":"ORA-06512: at \"C##CLOUD$SERVICE.DBMS_CLOUD$PDBCS_260821_1_0\", line 14129","logger":"task.stdout"}
+{"timestamp":"2026-08-29T17:52:12.643421Z","level":"info","event":"ORA-06512: at \"C##CLOUD$SERVICE.DBMS_CLOUD$PDBCS_260821_1_0\", line 14150","logger":"task.stdout"}
+{"timestamp":"2026-08-29T17:52:12.643946Z","level":"info","event":"ORA-06512: at line 2","logger":"task.stdout"}
+{"timestamp":"2026-08-29T17:52:12.651677Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2026-08-29T17:52:12.652528Z","level":"info","event":"============================================================","logger":"task.stdout"}
+{"timestamp":"2026-08-29T17:52:12.653064Z","level":"info","event":"CARGA PARCIAL: 0/4 tabelas carregadas","logger":"task.stdout"}
+{"timestamp":"2026-08-29T17:52:12.653567Z","level":"info","event":"============================================================","logger":"task.stdout"}
+{"timestamp":"2026-08-29T17:52:12.651836Z","level":"error","event":"Task failed with exception","logger":"task","filename":"task_runner.py","lineno":1347,"error_detail":[{"exc_type":"RuntimeError","exc_value":"Falha na carga analítica no Autonomous Database.","exc_notes":[],"syntax_error":null,"is_cause":false,"frames":[{"filename":"/home/airflow/.local/lib/python3.11/site-packages/airflow/sdk/execution_time/task_runner.py","lineno":1263,"name":"run"},{"filename":"/home/airflow/.local/lib/python3.11/site-packages/airflow/sdk/execution_time/task_runner.py","lineno":1678,"name":"_execute_task"},{"filename":"/home/airflow/.local/lib/python3.11/site-packages/airflow/sdk/bases/operator.py","lineno":443,"name":"wrapper"},{"filename":"/home/airflow/.local/lib/python3.11/site-packages/airflow/providers/standard/operators/python.py","lineno":227,"name":"execute"},{"filename":"/home/airflow/.local/lib/python3.11/site-packages/airflow/providers/standard/operators/python.py","lineno":250,"name":"execute_callable"},{"filename":"/home/airflow/.local/lib/python3.11/site-packages/airflow/sdk/execution_time/callback_runner.py","lineno":97,"name":"run"},{"filename":"/opt/airflow/dags/meddata_pipeline.py","lineno":151,"name":"tarefa_carga"}],"is_group":false,"exceptions":[]}]}

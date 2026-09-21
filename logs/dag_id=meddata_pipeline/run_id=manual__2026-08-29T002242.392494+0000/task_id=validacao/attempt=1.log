@@ -1,0 +1,20 @@
+{"timestamp":"2026-08-29T00:28:13.618614Z","level":"info","event":"DAG bundles loaded: dags-folder","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager","filename":"manager.py","lineno":209}
+{"timestamp":"2026-08-29T00:28:13.619983Z","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/meddata_pipeline.py","logger":"airflow.dag_processing.dagbag.BundleDagBag","filename":"dagbag.py","lineno":469}
+{"timestamp":"2026-08-29T00:28:14.070648Z","level":"info","event":"Default Auth client Circuit breaker strategy enabled","logger":"oci.circuit_breaker","filename":"__init__.py","lineno":28}
+{"timestamp":"2026-08-29T00:28:14.383153Z","level":"warning","event":"The `airflow.hooks.base.BaseHook` attribute is deprecated. Please use `'airflow.sdk.bases.hook.BaseHook'`.","category":"UserWarning","filename":"/opt/airflow/dags/meddata_pipeline.py","lineno":11,"logger":"py.warnings"}
+{"timestamp":"2026-08-29T00:28:14.398591Z","level":"info","event":"[VALIDACAO] Validando dados para SP/2024/08","logger":"task.stdout"}
+{"timestamp":"2026-08-29T00:28:14.398542Z","level":"info","event":"INICIANDO VALIDAÇÃO: SP 2024/08","logger":"validacao","filename":"validacao.py","lineno":268}
+{"timestamp":"2026-08-29T00:28:14.415564Z","level":"info","event":"Carregado: dim_municipio (1,366 registros)","logger":"validacao","filename":"validacao.py","lineno":58}
+{"timestamp":"2026-08-29T00:28:14.424547Z","level":"info","event":"Carregado: dim_hospital (1,428 registros)","logger":"validacao","filename":"validacao.py","lineno":58}
+{"timestamp":"2026-08-29T00:28:14.430520Z","level":"info","event":"Carregado: dim_tempo (1,175 registros)","logger":"validacao","filename":"validacao.py","lineno":58}
+{"timestamp":"2026-08-29T00:28:14.496198Z","level":"info","event":"Carregado: fato_internacao (231,272 registros)","logger":"validacao","filename":"validacao.py","lineno":58}
+{"timestamp":"2026-08-29T00:28:14.551911Z","level":"info","event":"============================================================","logger":"validacao","filename":"validacao.py","lineno":233}
+{"timestamp":"2026-08-29T00:28:14.552048Z","level":"info","event":"RELATÓRIO DE VALIDAÇÃO","logger":"validacao","filename":"validacao.py","lineno":234}
+{"timestamp":"2026-08-29T00:28:14.552102Z","level":"info","event":"============================================================","logger":"validacao","filename":"validacao.py","lineno":235}
+{"timestamp":"2026-08-29T00:28:14.552152Z","level":"info","event":"DIM_MUNICIPIO | 1,366 registros | 6 colunas","logger":"validacao","filename":"validacao.py","lineno":239}
+{"timestamp":"2026-08-29T00:28:14.552197Z","level":"info","event":"DIM_HOSPITAL | 1,428 registros | 17 colunas","logger":"validacao","filename":"validacao.py","lineno":239}
+{"timestamp":"2026-08-29T00:28:14.552239Z","level":"info","event":"DIM_TEMPO | 1,175 registros | 7 colunas","logger":"validacao","filename":"validacao.py","lineno":239}
+{"timestamp":"2026-08-29T00:28:14.552278Z","level":"info","event":"FATO_INTERNACAO | 231,272 registros | 23 colunas","logger":"validacao","filename":"validacao.py","lineno":239}
+{"timestamp":"2026-08-29T00:28:14.552317Z","level":"info","event":"VALIDAÇÃO APROVADA: nenhum erro encontrado.","logger":"validacao","filename":"validacao.py","lineno":254}
+{"timestamp":"2026-08-29T00:28:14.555019Z","level":"info","event":"Done. Returned value was: None","logger":"airflow.task.operators.airflow.providers.standard.operators.python.PythonOperator","filename":"python.py","lineno":229}
+{"timestamp":"2026-08-29T00:28:14.557674Z","level":"info","event":"[VALIDACAO] Dados aprovados para carga.","logger":"task.stdout"}

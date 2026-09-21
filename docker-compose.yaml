@@ -1,0 +1,34 @@
+services:
+  airflow:
+    image: apache/airflow:3.2.1-python3.11
+    container_name: airflow-meddata
+    command: standalone
+    restart: unless-stopped
+
+    ports:
+      - "8080:8080"
+
+    environment:
+      AIRFLOW__CORE__LOAD_EXAMPLES: "False"
+      AIRFLOW__API__SECRET_KEY: "IxL+wsBFpXW1xarmK/rSgDtzHAmm8EvPneNStaqGRO4hn0AwNss+VmrCg2Dod7Vdn/Ciuj9YwgU93zLZG7gUMg=="
+      AIRFLOW__SECRETS__JWT_SECRET: "Wj1F8866qpRco+PYAvhb3CZh4QivIrLFulDdgk098eiNHrA/vXzak/Zox7SkkFHWvZWVy2cW/FyXlVsyGvy6qg=="
+      WALLET_PASSWORD: ${WALLET_PASSWORD}
+      TNS_ADMIN: /opt/airflow/wallet
+      _PIP_ADDITIONAL_REQUIREMENTS: >-
+        pandas
+        pyarrow
+        pysus
+        oci
+        oracledb
+        apache-airflow-providers-oracle
+
+    volumes:
+      - ./dags:/opt/airflow/dags
+      - ./src:/opt/airflow/src
+      - ./data:/opt/airflow/data
+      - ./logs:/opt/airflow/logs
+      - ./plugins:/opt/airflow/plugins
+      - ./wallet:/opt/airflow/wallet:ro
+
+      # Necessário para upload ao Object Storage da OCI.
+      - C:/Users/ro77d/.oci:/home/airflow/.oci:ro
