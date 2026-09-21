@@ -558,5 +558,3 @@ Após corrigir uma falha, use a ação de limpar o estado da tarefa na interface
 - [Configuração do Apache Airflow 3.2.1](https://airflow.apache.org/docs/apache-airflow/3.2.1/configurations-ref.html).
 - [Oracle: criar credenciais e carregar tabelas existentes](https://docs.oracle.com/en/cloud/paas/autonomous-database/serverless/adbsb/load-data-cloud-copy.html).
 - [CSV municipal utilizado pelo código](https://github.com/kelvins/municipios-brasileiros), fonte indicada em `src/ingestao.py`.
-#   h o s p i t a l i z a t i o n - a i r f l o w - p i p e l i n e  
- 
